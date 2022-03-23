@@ -1,0 +1,75 @@
+[
+    {
+      "precio":  13650,
+      "id": 1,
+      "title": "ZAPATILLAS DURAMO SL",
+      "thumbnailUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/dcf60687e25b40d78f16ad1100e394aa_9366/Zapatillas_Duramo_SL_Azul_GV7126_09_standard.jpg"
+    },
+    {
+      "precio":  13995,
+      "id": 2,
+      "title": "ZAPATILLAS X9000L1",
+      "thumbnailUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a6f1785b518348d082c7ad4b010f1627_9366/Zapatillas_X9000L1_Negro_H00557_01_standard.jpg"
+    },
+    {
+      "precio":  13995,
+      "id": 3,
+      "title": "ZAPATILLAS RACER TR21",
+      "thumbnailUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4cb7f45b21a64881a2ccad1d017daec3_9366/Zapatillas_Racer_TR21_Negro_GZ8184_01_standard.jpg"
+    },
+    {
+      "precio":  11655,
+      "id": 4,
+      "title": "CONTINENTAL STRIPES",
+      "thumbnailUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/221645ca620a43f5b732ac24011508f3_9366/Zapatillas_Continental_80_Stripes_Blanco_FX5090_01_standard.jpg"
+    },
+    {
+      "precio":  12995,
+      "id": 5,
+      "title": "ZAPATILLAS X9000L1",
+      "thumbnailUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5d798277027140d38de9acbf00e51217_9366/Zapatillas_X9000L1_Negro_H00555_01_standard.jpg"
+    },
+    {
+      "precio":  5995,
+      "id": 6,
+      "title": "OJOTAS ADILETTE LITE",
+      "thumbnailUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/63ed70d28b5d4426bbc3ad2100b3919b_9366/Ojotas_adilette_Lite_Blanco_GX0995_01_standard.jpg"
+    },
+    {
+      "precio":  18495,
+      "id": 7,
+      "title": "ZAPATILLAS SUPERSTAR",
+      "thumbnailUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a4d975e141054d24a0eaaae700d36352_9366/Zapatillas_Superstar_Blanco_EG4960_01_standard.jpg"
+    },
+    {
+      "precio":  13995,
+      "id": 8,
+      "title": "OJOTAS ADILETTE CONFORT",
+      "thumbnailUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0750fa3ced5e4214862eacee00d4aebb_9366/Ojotas_adilette_Confort_The_Simpsons_Negro_GV7349_01_standard.jpg"
+    },
+    {
+      "precio":  18495,
+      "id": 9,
+      "title": "ZAPATILLAS ZX 1K BOOST",
+      "thumbnailUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/282fd435ecdc41598ba7ac8300b22442_9366/Zapatillas_ZX_1K_Boost_Blanco_FX6510_01_standard.jpg"
+    },
+    {
+      "precio":  10995,
+      "id": 10,
+      "title": "ZAPATILLAS SUPERSTAR",
+      "thumbnailUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1b9426b55a0543acb869ad0800cb8650_9366/Zapatillas_Superstar_Blanco_H00162_01_standard.jpg"
+    },
+    {
+      "precio":  24995,
+      "id": 11,
+      "title": "ZAPATILLAS X9000L4 M",
+      "thumbnailUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b524171874db4dd997c2ad2500cbe045_9366/X9000L4_M_Negro_S23665_01_standard.jpg"
+    },
+    {
+      "precio":  13995,
+      "id": 12,
+      "title": "ZAPATILLAS MULTIX",
+      "thumbnailUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fe3cf34e1dfd407ab788ac3700ac61bf_9366/Zapatillas_Multix_Blanco_FZ3439_01_standard.jpg"
+    }
+
+  ]

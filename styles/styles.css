@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Montserrat:ital,wght@1,200&family=Poppins:wght@200&family=Quicksand:wght@300;514;700&display=swap');
+*{
+    margin: 0;
+    padding: 20px;
+}
+.nav-item{
+    margin: auto;
+    width: 230px;
+    text-align: center;
+    vertical-align: middle;
+    border-color: solid black;
+}
+
+.nav-item a{
+    color: rgb(0, 0, 0);
+    font-size: 18px;  
+}
+.navbar-expand-sm {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    background-color:rgb(236, 232, 227);
+    align-items:center;
+    border-radius: 25px;
+}
+
+.navbar-brand{
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin:  auto;
+}
+
+.carroCompras{
+    background-color: white;
+    border-radius: 30px; 
+    margin: auto;
+}
+
+.card-img-top:hover {
+    transition: all 300ms ease-in-out;
+    margin: auto;
+}
+
+  @media all and (min-width: 300px) {
+    .card-img-top:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    }
+}
+
+.card-body{  
+    background-color: white;
+    height: 210px;
+    width: 280px; 
+    margin: auto; 
+   
+}
+
+.card-body h6{
+    width: 250px;  
+    margin: auto;
+    background-color: rgb(243, 232, 232);
+    text-align: center;
+     
+}
+
+.card-body p{
+    background-color: white;
+    width: 90px;
+    height: 40px;
+      
+}
+#vaciar-carrito{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: auto;
+}
+
+.seccionCarrito{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(94, 100, 112);
+    border-radius: 80px;
+}  
+
+.seccionCarrito p{
+    margin: auto;
+    color: white;
+}
+
+.carroCompras{
+    background-color: rgb(231, 212, 212);
+    margin: 20px;
+}
+
+.carroCompras thead{
+    height: 80px;
+}
+
+.carroCompras th{
+    font-size: 20px;
+    vertical-align: middle;   
+}
+
+.carroCompras table{
+    margin: auto;
+}
+
+#footer{
+    height: 150px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+
