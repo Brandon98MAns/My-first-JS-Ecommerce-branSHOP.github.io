@@ -1,3 +1,4 @@
+//Tomo elementos de mi HTML.
 const cards = document.getElementById('cards')
 const items = document.getElementById('items')
 const footer = document.getElementById('footer')
@@ -7,18 +8,22 @@ const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 let carrito = {}
 
+// Eventos
+// El evento DOMContentLoaded es disparado cuando el documento HTML ha sido completamente cargado y parseado
 document.addEventListener('DOMContentLoaded', () => {
     fetchData()
 
+//Pregunto si hay algo en el carrito
+
     //SIN OPERADOR AND 
 
-    /*if(localStorage.getItem('carrito')) { //pregunto si hay algo en el carrito
+    /*if(localStorage.getItem('carrito')) { 
         carrito = JSON.parse(localStorage.getItem('carrito'))
         pintarCarrito()
     }*/
 
     //CON OPERADOR AND
-    localStorage.getItem('carrito') && (carrito = JSON.parse(localStorage.getItem('carrito'))) && pintarCarrito() //pregunto si hay algo en el carrito       
+    localStorage.getItem('carrito') && (carrito = JSON.parse(localStorage.getItem('carrito'))) && pintarCarrito()        
 })
 cards.addEventListener('click', e => {
     addCarrito(e)
@@ -28,30 +33,31 @@ items.addEventListener('click', e => {
     btnAccion(e)
 })
 
-
+// Traer productos
 const fetchData = async() => {
     try {
-        const res = await fetch('api.json')
+        const res = await fetch('api.json') //Conecto a mi archivo JSON.
         const data = await res.json()
         pintarCards(data)
     } catch (error) {
         console.log(error)
     }
 }
-
+// Pintar productos
 const pintarCards = data => {
     data.forEach(producto => {
       templateCard.querySelector('h6').textContent = producto.title
       templateCard.querySelector('p').textContent = producto.precio
       templateCard.querySelector('img').setAttribute('src', producto.thumbnailUrl)
       templateCard.querySelector('button').dataset.id = producto.id
+      
     
         const clone = templateCard.cloneNode(true)
         fragment.appendChild(clone)
     })
     cards.appendChild(fragment)
 }
-
+//Accion de añadir al carrito
 const addCarrito = e => {
     if(e.target.classList.contains('btn-outline-dark')) {
 
@@ -113,14 +119,14 @@ const pintarFooter = () => {
     const clone = templateFooter.cloneNode(true)
     fragment.appendChild(clone)
     footer.appendChild(fragment)
-
+    //Accion que se ejecuta al precionar vaciar carrito con su respectivo sweet alert.
     const btnVaciar = document.getElementById('vaciar-carrito')
     btnVaciar.addEventListener('click', () => {
         carrito = {}
         pintarCarrito()
         swal("Su carrito se encuentra vacio!", "Comienze a comprar!");
     })
-
+    //Accion que se ejecuta al precionar Finalizar compra con su respectivo sweet alert.
     const btnFinalizar = document.getElementById('FinalizarCompra')
     btnFinalizar.addEventListener('click', () => {
        
@@ -152,7 +158,7 @@ const pintarFooter = () => {
 }
 
 const btnAccion = e => {
-       //Accion de aumentar unidades productos
+       //Accion de aumentar unidades productos en el carrito.
     if(e.target.classList.contains('btn-outline-light')) {
         const producto = carrito[e.target.dataset.id]
         producto.cantidad++//uso Operador ++
@@ -160,10 +166,10 @@ const btnAccion = e => {
         pintarCarrito()        
     }
 
-    //Accion restar unidades productos
+    //Accion restar unidades de productos en carrito.
     if(e.target.classList.contains('btn-outline-danger')) {
         const producto = carrito[e.target.dataset.id] 
-        producto.cantidad-- //uso operador --
+        producto.cantidad-- //uso operador -- (menos menos)
         if(producto.cantidad === 0){
             delete carrito[e.target.dataset.id]
         }
@@ -172,21 +178,6 @@ const btnAccion = e => {
     e.stopPropagation()
 }
 
-    /*Toastify({
-        text: "This is a toast",
-        duration: 3000,
-        destination: "https://github.com/apvarun/toastify-js",
-        newWindow: true,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "left", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-          background: "linear-gradient(to right, #00b09b, #96c93d)",
-        },
-        onClick: function(addCarrito){} // Callback after click
-      }).showToast();
 
 
 
-console.log(DateTime.now().toString)*/
